@@ -2,6 +2,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 
+#Base Conv Model
+
 class DoubleConv(nn.Module):
     
     def __init__(self, in_channels,out_channels):
@@ -21,7 +23,7 @@ class DoubleConv(nn.Module):
     def forward(self,x):
         return self.conv(x)
     
-
+#U-Net Architecture
 
 class UNET(nn.Module):
     
